@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script>
+      // var div = document.getElementById("clickDiv");
+      // div.addEventListener("click",
+      //   function(evt) {
+      //     console.log("evt", evt);
+      //   });
+
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var el = document.querySelector("#clickDiv");
+        console.log('el:', el)
+        el.addEventListener("click",
+          function(evt) {
+            console.log("evt", evt);
+          });
+      })
+
+    </script>
+  </head>
+  <body>
+    <title>{{ greeting }} World</title>
+    <p>
+      Input: <input type="text" ng-model="greeting" ng-init="greeting='Hello'">
+    </p>
+    <p>{{ greeting }} world!</p>
+    <input type="text" placeholder="{{ holder }}" ng-model="name">
+    <h1>Name2: {{ name }}</h1>
+
+    <div id="clickDiv">
+      [click]
+    </div>
+  </body>
+</html>
+
+
+<!-- multiple model items -->
