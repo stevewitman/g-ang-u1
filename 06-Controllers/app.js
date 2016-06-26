@@ -12,11 +12,11 @@ app.controller("exercisesController", function($scope) {
 
 app.controller("madLibController", function($scope) {
   $scope.showMadLib = false;
-  $scope.myFunc = function() {
-    $scope.field_1 = $scope.field1;
-    $scope.field_2 = $scope.field2;
-    $scope.field_3 = $scope.field3;
-    $scope.field_4 = $scope.field4;
+  $scope.myFunc = function(f1,f2,f3,f4) {
+    $scope.field_1 = f1;
+    $scope.field_2 = f2;
+    $scope.field_3 = f3;
+    $scope.field_4 = f4;
     $scope.showMadLib = true;
   };
   $scope.clearForm = function() {
